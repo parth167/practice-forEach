@@ -166,9 +166,10 @@ Examples:
 */
 
 function find(arr, searchValue) {
-  return arr.filter(function (value) {
+  let [obj] = arr.filter(function (value) {
     return value === searchValue;
   });
+  return obj;
 }
 
 /*
@@ -179,9 +180,10 @@ Examples:
 */
 
 function findInObj(arr, key, searchValue) {
-  return arr.filter(function (value) {
+  let [obj] = arr.filter(function (value) {
     return value[key] === searchValue;
   });
+  return obj;
 }
 
 /*
